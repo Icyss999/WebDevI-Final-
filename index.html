@@ -3,9 +3,106 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style/style.css">
         <title>Homepage</title>
     </head>
     <body>
+
+        <!-- Sticky header bar, might put the logo-->
+
+        <header>
+            <a href="/" id="nav-header">Pu Nha Hotpot 9999</a>
+
+            <nav>
+                <a href="/" class="nav">Home</a>
+
+                <details class="nav dropdown">
+                    <summary>About Us</summary>
+                    <a href="locations.html" class="dropdown-item">Locations</a>
+                    <a href="history.html" class="dropdown-item">Hisory</a>
+                </details>
+
+                <details class="nav dropdown">
+                    <summary>Franchising</summary>
+                    <a href="requirements.html" class="dropdown-item">Requirements</a>
+                    <a href="faqs.html" class="dropdown-item">FAQs</a>
+                </details>
+
+                <a href="contacts.html" class="nav">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2 class="hero-top-heading">Serving pot kdav kdav since 2001</h2>
+                <h1 class="hero-heading">Pu Nha Hotpot 9999</h1>
+                <h3 class="hero-sub-heading">Two steaming broths per pot, a buffet line full of fresh things to cook, and a table full of friends with unforgottable memories</h3>
+
+                <a href="#form" class="hero-button">Book a table</a>
+                <a href="#menu" class="hero-button">See the menu</a>
+            </section>
+
+            <section class="menu" id="menu">
+                <h3 class="content-top-heading">MENU</h3>
+                <h2 class="content-heading">One price, all you can eat</h2>
+                <p class="content-paragraph">Your table time is 2 minute, good luck eating allat. GG</p>
+
+                <div class="menu-item-container">
+                    <div class="menu-item-title"></div>
+                    <div class="menu-item-title"></div>
+
+                    <div class="menu-item-broth"></div>
+                    <div class="menu-item-meat-and-seafood"></div>
+                    <div class="menu-item-veggies-and-more"></div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="info-left"></div>
+                <div class="info-right"></div>
+            </section>
+
+               
+            <section class="form" id="form">
+                <h3 class="content-top-heading"></h3>
+                <h2 class="content-heading>"></h2>
+                <p class="content-paragraph"></p>
+
+                <form action="/submit" method="post">
+                    <label for="name">Name</label>
+                    <input class="form-item" type="text" id="name" name="name" placeholder="Pu Nha" required>
+
+                    <label for="phone">Phone</label>
+                    <input class="form-item" type="tel" id="phone" name="phone" placeholder="111 111 111" required>
+
+                    <label for="date">Date</label>
+                    <input class="form-item" type="date" id="date" name="date" required`>
+
+                    <label for="time">Time</label>
+                    <select id="time" name="time" required>
+                        <option value="" disabled selected>HTML hurs my brain</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                    </select>
+
+                    <label for="guests">Guests</label>
+                    <input class="form-item" type="number" id="guests" name="guests" placeholder="2 unless you're single" required>
+
+                    <label for="branch">Branch</label>
+                    <select id="branch" name="branch" required>
+                        <option value="" disabled selected>I cannot wait for CSS. Please no</option>
+                        <option value="chba ampov">how tf do I spell that</option>
+                        <option value="where tf do those 2 live">Somewhere</option>
+                        <option value="black grandpa">Black grandfather</option>
+                    </select>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <!-- footah plz do footah-->
+        </footer>
+
     </body>
 </html>
