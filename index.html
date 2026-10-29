@@ -1,142 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./public/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Homepage•Pu Nha Hotpot 9999</title>
+  </head>
+  <body>
+    <!-- Sticky header bar, might put the logo-->
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/style/style.css">
-        <title>Homepage</title>
-    </head>
-    <body>
+    <header>
+      <a href="/" class="nav-header">Pu Nha Hotpot <span>9999</span></a>
 
-        <!-- Sticky header bar, might put the logo-->
+      <nav>
+        <a href="/" class="nav-item">Home</a>
 
-        <header>
-            <a href="/" class="nav-header">Pu Nha Hotpot <span>9999</span></a>
+        <div class="dropdown">
+          <span class="nav-item">About Us</span>
+          <div class="dropdown-menu">
+            <a href="locations.html" class="dropdown-item">Locations</a>
+            <a href="history.html" class="dropdown-item">History</a>
+          </div>
+        </div>
 
-            <nav>
-                <a href="/" class="nav-item">Home</a>
+        <div class="dropdown">
+          <span class="nav-item">FAQs</span>
+          <div class="dropdown-menu">
+            <a href="/franchising/faqs.html" class="dropdown-item">FAQs</a>
+            <a href="/franchising/requirements.html" class="dropdown-item"
+              >Requirements</a
+            >
+          </div>
+        </div>
 
-                <div class="dropdown">
-                    <span class="nav-item">About Us</span>
-                    <div class="dropdown-menu">
-                        <a href="locations.html" class="dropdown-item">Locations</a>
-                        <a href="history.html" class="dropdown-item">History</a>
-                    </div>
-                </div>
+        <a href="contacts.html" class="nav-item">Contact</a>
+      </nav>
+    </header>
 
-               <div class="dropdown">
-                    <span class="nav-item">FAQs</span>
-                    <div class="dropdown-menu">
-                        <a href="/franchising/faqs.html" class="dropdown-item">FAQs</a>
-                        <a href="/franchising/requirements.html" class="dropdown-item">Requirements</a>
-                    </div>
-               </div>
+    <main>
+      <section class="hero">
+        <h2 class="hero-top-heading">Serving pot kdav kdav since 2001</h2>
+        <h1 class="hero-heading">Pu Nha Hotpot 9999</h1>
+        <h3 class="hero-sub-heading">
+          Two steaming broths per pot, a buffet line full of fresh things to
+          cook, and a table full of friends with unforgottable memories
+        </h3>
 
-                <a href="contacts.html" class="nav-item">Contact</a>
-            </nav>
-        </header>
+        <a href="#form" class="hero-button">Book a table</a>
+        <a href="#menu" class="hero-button">See the menu</a>
+      </section>
 
-        <main>
-            <section class="hero">
-                <h2 class="hero-top-heading">Serving pot kdav kdav since 2001</h2>
-                <h1 class="hero-heading">Pu Nha Hotpot 9999</h1>
-                <h3 class="hero-sub-heading">Two steaming broths per pot, a buffet line full of fresh things to cook, and a table full of friends with unforgottable memories</h3>
+      <section class="menu" id="menu">
+        <h3 class="content-top-heading">MENU</h3>
+        <h2 class="content-heading">One price, all you can eat</h2>
+        <p class="content-paragraph">
+          Your table time is 2 minute, good luck eating allat. GG
+        </p>
 
-                <a href="#form" class="hero-button">Book a table</a>
-                <a href="#menu" class="hero-button">See the menu</a>
-            </section>
+        <div class="menu-item-container">
+          <div class="menu-item-title"></div>
+          <div class="menu-item-title"></div>
 
-            <section class="menu" id="menu">
-                <h3 class="content-top-heading">MENU</h3>
-                <h2 class="content-heading">One price, all you can eat</h2>
-                <p class="content-paragraph">Your table time is 2 minute, good luck eating allat. GG</p>
+          <div class="menu-item-broth"></div>
+          <div class="menu-item-meat-and-seafood"></div>
+          <div class="menu-item-veggies-and-more"></div>
+        </div>
+      </section>
 
-                <div class="menu-item-container">
-                    <div class="menu-item-title"></div>
-                    <div class="menu-item-title"></div>
+      <section class="info">
+        <div class="info-left"></div>
+        <div class="info-right"></div>
+      </section>
 
-                    <div class="menu-item-broth"></div>
-                    <div class="menu-item-meat-and-seafood"></div>
-                    <div class="menu-item-veggies-and-more"></div>
-                </div>
-            </section>
+      <section class="form" id="form">
+        <h3 class="content-top-heading"></h3>
+        <h2 class="content-heading>"></h2>
+        <p class="content-paragraph"></p>
 
-            <section class="info">
-                <div class="info-left"></div>
-                <div class="info-right"></div>
-            </section>
+        <form action="/submit" method="post">
+          <label for="name">Name</label>
+          <input
+            class="form-item"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Pu Nha"
+            required
+          />
 
-               
-            <section class="form" id="form">
-                <h3 class="content-top-heading"></h3>
-                <h2 class="content-heading>"></h2>
-                <p class="content-paragraph"></p>
+          <label for="phone">Phone</label>
+          <input
+            class="form-item"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="111 111 111"
+            required
+          />
 
-                <form action="/submit" method="post">
-                    <label for="name">Name</label>
-                    <input class="form-item" type="text" id="name" name="name" placeholder="Pu Nha" required>
+          <label for="date">Date</label>
+          <input
+            class="form-item"
+            type="date"
+            id="date"
+            name="date"
+            required`
+          />
 
-                    <label for="phone">Phone</label>
-                    <input class="form-item" type="tel" id="phone" name="phone" placeholder="111 111 111" required>
+          <label for="time">Time</label>
+          <select id="time" name="time" required>
+            <option value="" disabled selected>HTML hurs my brain</option>
+            <option value="18:00">6:00 PM</option>
+            <option value="19:00">7:00 PM</option>
+            <option value="20:00">8:00 PM</option>
+          </select>
 
-                    <label for="date">Date</label>
-                    <input class="form-item" type="date" id="date" name="date" required`>
+          <label for="guests">Guests</label>
+          <input
+            class="form-item"
+            type="number"
+            id="guests"
+            name="guests"
+            placeholder="2 unless you're single"
+            required
+          />
 
-                    <label for="time">Time</label>
-                    <select id="time" name="time" required>
-                        <option value="" disabled selected>HTML hurs my brain</option>
-                        <option value="18:00">6:00 PM</option>
-                        <option value="19:00">7:00 PM</option>
-                        <option value="20:00">8:00 PM</option>
-                    </select>
+          <label for="branch">Branch</label>
+          <select id="branch" name="branch" required>
+            <option value="" disabled selected>
+              I cannot wait for CSS. Please no
+            </option>
+            <option value="chbar ampov">how tf do I spell that</option>
+            <option value="where tf do those 2 live">Somewhere</option>
+            <option value="black grandpa">Black grandfather</option>
+          </select>
+        </form>
+      </section>
+    </main>
 
-                    <label for="guests">Guests</label>
-                    <input class="form-item" type="number" id="guests" name="guests" placeholder="2 unless you're single" required>
-
-                    <label for="branch">Branch</label>
-                    <select id="branch" name="branch" required>
-                        <option value="" disabled selected>I cannot wait for CSS. Please no</option>
-                        <option value="chbar ampov">how tf do I spell that</option>
-                        <option value="where tf do those 2 live">Somewhere</option>
-                        <option value="black grandpa">Black grandfather</option>
-                    </select>
-                </form>
-            </section>
-        </main>
-
-        <footer class="site-footer">
+        <footer>
             <!-- footah plz do footah-->
-            <div class="footer-grid">
+            <div>
                 <div>
-                    <p class ="footer-logo">
+                    <p>
                         Pu Nha <span>9999</span>
                     </p>
-                    <p>Uncle Nha's Hotpot since 2001</p>
+                    <p>Uncle Nha Hotpot since 2001</p>
                 </div>
 
-                <div>
-                    <h3>Pages</h3>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="locations.html">Locations</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="requirements.html">Requirements</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                        <li><a href="contacts.html">Contact</a></li>
-                    </ul>
-                </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="requirements.html">Requirements</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
 
-                <div>
-                    <h3>Head Office</h3>
-                    <p>1234 Street Name</p>
-                    <p>OPEN EVERYDAYYYYYY</p>
-                </div>
-            </div>
-        </footer>
-
-    </body>
+        <div>
+          <h3>Head Office</h3>
+          <p>1234 Street Name</p>
+          <p>OPEN EVERYDAYYYYYY</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

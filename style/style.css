@@ -1,191 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Sans:wght@400;600;700&display=swap");
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* --------------------- nav bar ----------------------------*/
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    height: 10vh;
-    padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
-
-    background-color: darkred;
+  height: 10vh;
+  padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+  margin: 0%;
+  background-color: darkred;
 }
 
 nav {
-    display: flex;
-    gap: 3em;
+  display: flex;
+  gap: 3em;
 }
 
 .nav-header {
-    font-family: 'Bagel Fat One', sans-serif;
-    font-size: 1.75rem;
-    color: white;
-    text-decoration: none;
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-header span {
-    color: #ffc02d;
+  color: #ffc02d;
 }
 
 .nav-item {
-    display: block;
+  display: block;
 
-    padding: 0.9rem 1.6rem; /* change dis value to increase the background box size, I am tempted to just remove it atp.*/
+  padding: 0.9rem 1.6rem; /* change dis value to increase the background box size, I am tempted to just remove it atp.*/
 
-    font-family: 'Fira Sans', sans;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    list-style: none;
+  font-family: "Fira Sans", sans;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  list-style: none;
 
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
-.nav-item:hover, .nav-item.active {
-    background-color: #B3150C;
-    
-    color: #ffc02d;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 0.35rem;
-    cursor: pointer;
+.nav-item:hover,
+.nav-item.active {
+  background-color: #b3150c;
+
+  color: #ffc02d;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.35rem;
+  cursor: pointer;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0%;
+  position: absolute;
+  top: 100%;
+  left: 0%;
 
-    display: none;
-    flex-direction: column;
+  display: none;
+  flex-direction: column;
 
-    padding: 10px;
-    min-width: 100%;
+  padding: 10px;
+  min-width: 100%;
 
-    border: 1px black solid;
-    border-radius: 10px;
-    background-color: #ffffff;
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
-    display: flex;
+  display: flex;
 }
 
 .dropdown-item {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 
-    font-family: 'Fira Sans', sans-serif;
-    color: black;
-    text-decoration: none;
-    white-space: nowrap;
+  font-family: "Fira Sans", sans-serif;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .dropdown-item:hover {
-    border-radius: 10px;
+  border-radius: 10px;
 
-    background-color: #ffc02d;
+  background-color: #ffc02d;
 }
 
 /* ------------ nav bar ends here ----------------*/
-
-
-/* ------------ Footer ------------ */
-footer {
-    font-family: 'Fira Sans', Arial, sans-serif;
-}
-
-footer h3 {
-    font-family: "Bagel Fat One", "Arial Black", sans-serif;
-}
-.site-footer {
-    background: #7A0E07;
-    color: #FFF7F2;
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    padding: 48px 16px 32px;
-    margin-top: 64px;
-}
-
-.footer-grid {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr;
-    gap: 32px;
-}
-
-.footer-logo {
-    font-family: "Bagel Fat One", "Arial Black", sans-serif;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    margin: 0 0 8px;
-}
-
-.footer-logo span {
-    color: #FFC53D;
-}
-
-.site-footer h3 {
-    font-family: "Bagel Fat One", "Arial Black", sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: #FFC53D;
-    margin: 0 0 12px;
-}
-
-.site-footer p {
-    margin: 0 0 8px;
-}
-
-.site-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.site-footer li {
-    margin-bottom: 6px;
-}
-
-.site-footer a {
-    color: #FFF7F2;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.site-footer a:hover {
-    color: #FFC53D;
-    text-decoration: underline;
-}
-
-.footer-small {
-    font-size: 0.85rem;
-    color: #EBCFC2;
-}
-
-@media (max-width: 700px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ------------ End Footer ------------ */
