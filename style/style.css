@@ -1,6 +1,105 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* --------------------- nav bar ----------------------------*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+
+    background-color: darkred;
+}
+
+nav {
+    display: flex;
+    gap: 3em;
+}
+
+.nav-header {
+    font-family: 'Bagel Fat One', sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-header span {
+    color: #ffc02d;
+}
+
+.nav-item {
+    display: block;
+
+    padding: 0.9rem 1.6rem; /* change dis value to increase the background box size, I am tempted to just remove it atp.*/
+
+    font-family: 'Fira Sans', sans;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+
+    border-radius: 10px;
+}
+
+.nav-item:hover, .nav-item.active {
+    background-color: #B3150C;
+    
+    color: #ffc02d;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.35rem;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+
+    display: none;
+    flex-direction: column;
+
+    padding: 10px;
+    min-width: 100%;
+
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    border-radius: 10px;
+
+    background-color: #ffc02d;
+}
+
+/* ------------ nav bar ends here ----------------*/
