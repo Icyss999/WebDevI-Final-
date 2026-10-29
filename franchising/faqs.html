@@ -3,76 +3,116 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../public/favicon.ico" />
     <link
       rel="stylesheet"
       href="../style/style.css"
       class="requirement-point"
     />
-    <title>FAQs</title>
+    <title>FAQs•Pu Nha Hotpot 9999</title>
   </head>
   <body>
+    <header>
+      <a href="/" class="nav-header">Pu Nha Hotpot <span>9999</span></a>
+
+      <nav>
+        <a href="/" class="nav-item">Home</a>
+
+        <div class="dropdown">
+          <span class="nav-item">About Us</span>
+          <div class="dropdown-menu">
+            <a href="locations.html" class="dropdown-item">Locations</a>
+            <a href="history.html" class="dropdown-item">History</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <span class="nav-item">FAQs</span>
+          <div class="dropdown-menu">
+            <a href="/franchising/faqs.html" class="dropdown-item">FAQs</a>
+            <a href="/franchising/requirements.html" class="dropdown-item"
+              >Requirements</a
+            >
+          </div>
+        </div>
+
+        <a href="contacts.html" class="nav-item">Contact</a>
+      </nav>
+    </header>
+
     <main>
       <section class="heading">
-        <h1>Franchise FAQs</h1>
-        <p></p>
+        <h1 class="heading-label">Franchise FAQs</h1>
+        <p class="heading-content">
+          The great place for your most asked questions!
+        </p>
       </section>
-      <section id="accordion-continer">
-        <details name="question-one" id="accordion" class="accordion-one">
-          <summary>How much does it cost in total</summary>
-          <div id="answer" class="answer-one">
-            <p>
-              Between US$190,000 and 270,000, including the shop fit-out,
-              equipment and the franchise fee.
-            </p>
-          </div>
-        </details>
+      <section id="faq-container">
+        <section id="accordion-container">
+          <details name="question-one" class="accordion" id="accordion-one">
+            <summary>How much does it cost in total</summary>
+            <div class="answer" id="answer-one">
+              <p>
+                Between US$190,000 and 270,000, including the shop fit-out,
+                equipment and the franchise fee.
+              </p>
+            </div>
+          </details>
 
-        <details name="question-two" id="accordion" class="accordion-two">
-          <summary>Do I need restaurant experience?</summary>
-          <div id="answer" class="answer-two">
-            <p>
-              It helps, but it is not required. Our training crew works with
-              your team for your first weeks.
-            </p>
-          </div>
-        </details>
+          <details name="question-two" class="accordion" id="accordion-two">
+            <summary>Do I need restaurant experience?</summary>
+            <div class="answer" id="answer-two">
+              <p>
+                It helps, but it is not required. Our training crew works with
+                your team for your first weeks.
+              </p>
+            </div>
+          </details>
 
-        <details name="question-three" id="accordion" class="accordion-three">
-          <summary>Can I open in a shopping mall?</summary>
-          <div id="answer" class="answer-three">
-            <p>
-              Yes, as long as the mall allows a kitchen exhaust and has enough
-              power for the induction burners.
-            </p>
-          </div>
-        </details>
+          <details name="question-three" class="accordion" id="accordion-three">
+            <summary>Can I open in a shopping mall?</summary>
+            <div class="answer" id="answer-three">
+              <p>
+                Yes, as long as the mall allows a kitchen exhaust and has enough
+                power for the induction burners.
+              </p>
+            </div>
+          </details>
 
-        <details name="question-four" id="accordion" class="accordion-four">
-          <summary>Where do the broths come from?</summary>
-          <div id="answer" class="answer-four">
-            <p>
-              Our central kitchen in Phnom Penh makes every broth base and
-              delivers it each week.
-            </p>
-          </div>
-        </details>
+          <details name="question-four" class="accordion" id="accordion-four">
+            <summary>Where do the broths come from?</summary>
+            <div class="answer" id="answer-four">
+              <p>
+                Our central kitchen in Phnom Penh makes every broth base and
+                delivers it each week.
+              </p>
+            </div>
+          </details>
 
-        <details name="question-five" id="accordion" class="accordion-five">
-          <summary>Can I add my own dish?</summary>
-          <div id="answer" class="answer-five">
-            <p>
-              You can add up to three local dishes to the buffet after we taste
-              them. The broths stay the same.
-            </p>
-          </div>
-        </details>
-      </section>
+          <details name="question-five" class="accordion" id="accordion-five">
+            <summary>Can I add my own dish?</summary>
+            <div class="answer" id="answer-five">
+              <p>
+                You can add up to three local dishes to the buffet after we
+                taste them. The broths stay the same.
+              </p>
+            </div>
+          </details>
+        </section>
 
-      <section id="extra-info">
-        <span>
-          If you have any more questions feel free to contact us by clicking
-        </span>
-        <a href="../contacts.html">Contact us</a>
+        <section id="extra-info">
+          <span>
+            If you have any more questions, feel free to contact us by clicking
+            on
+          </span>
+          <a href="../contacts.html">Contact us</a>
+        </section>
       </section>
     </main>
   </body>
