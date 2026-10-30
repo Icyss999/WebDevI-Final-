@@ -190,3 +190,99 @@ summary::marker {
   color: red;
   text-decoration: none;
 }
+/* This is the end of FAQs */
+
+/* This is the start of requirement styling */
+
+#requirement-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  height: 100vh;
+  padding: 5% 0 0 0;
+  background-color: #fff7f2;
+}
+
+#requirement-detail h2 {
+  font-family: "Bagel Fat One", sans-serif;
+  color: black;
+  font-size: 4rem;
+}
+
+#requirement-detail table {
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+  width: 100%;
+  border-radius: 32px;
+  height: 300px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#requirement-detail table,
+th,
+td {
+}
+
+#table-header {
+  background-color: #7a0e07;
+  height: 50px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+.table-data-row {
+  padding: 100px;
+  font-weight: 400;
+  text-align: left;
+  font-size: 1rem;
+}
+
+#requirement-process {
+  width: 30%;
+  height: 350px;
+  background-color: white;
+  border: 3px solid #ebcfc2;
+  border-radius: 16px;
+}
+
+#requirement-process h3 {
+  color: #b3150c;
+  padding: 3% 0 0 5%;
+
+  font-family: "Bagel Fat One", sans-serif;
+}
+
+#requirement-list {
+  font-family: "Fira Sans", sans;
+}
+#requirement-list li {
+  padding: 0 0 3% 2%;
+}
+
+#requirement-list li::marker {
+  color: #7a0e07;
+  font-weight: 600;
+}
+
+#route-button {
+  background-color: #b3150c;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  margin-left: 5%;
+}
+
+#route-button:hover {
+  background-color: #7a0e07;
+  cursor: pointer;
+}
+/* This is the end of requirement styling */
