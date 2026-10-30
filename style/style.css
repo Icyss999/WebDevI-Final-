@@ -3,7 +3,14 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding: 0;
+}
+
+main {
+  flex: 1;
 }
 
 /* --------------------- nav bar ----------------------------*/
@@ -51,7 +58,7 @@ nav {
   text-decoration: none;
   list-style: none;
 
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .nav-item:hover,
@@ -60,7 +67,7 @@ nav {
 
   color: #ffc02d;
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 4px;
   text-underline-offset: 0.35rem;
   cursor: pointer;
 }
@@ -77,7 +84,7 @@ nav {
   display: none;
   flex-direction: column;
 
-  padding: 10px;
+  padding: 12px;
   min-width: 100%;
 
   border: 1px black solid;
@@ -115,7 +122,6 @@ nav {
   font-weight: 400;
   line-height: 1.6;
   padding: 48px 16px 32px;
-  margin-top: 64px;
 }
 
 .footer-grid {
@@ -213,7 +219,6 @@ nav {
 /* This one is for faq section only */
 
 #faq-container {
-  height: 100vh;
   width: 100%;
   background-color: #fff7f2;
 }
@@ -225,7 +230,7 @@ nav {
   align-items: center;
   gap: 20px;
   width: 70%;
-  padding: 5% 0 0 10%;
+  padding: 5% 0 5% 10%;
 }
 
 .accordion {
@@ -244,7 +249,7 @@ nav {
 
 .accordion[open] {
   display: block;
-  height: 150px;
+  height: 160px;
   padding: 4% 0 0 2%;
 }
 
@@ -258,7 +263,7 @@ summary::marker {
 }
 
 #extra-info {
-  padding: 2% 0 0 5%;
+  padding: 0 0 5% 5%;
   font-family: "Fira Sans", sans-serif;
   font-size: 1rem;
 }
@@ -277,53 +282,68 @@ summary::marker {
   justify-content: center;
   gap: 5%;
   width: 100%;
-  height: 100vh;
-  padding: 5% 0 0 0;
+  padding: 5% 0 5% 0;
   background-color: #fff7f2;
 }
-
+#requirement-detail {
+  width: 40%;
+}
 #requirement-detail h2 {
   font-family: "Bagel Fat One", sans-serif;
   color: black;
-  font-size: 4rem;
+  font-size: 3.25rem;
 }
 
 #requirement-detail table {
   border-collapse: separate;
-  border-spacing: 20px 10px;
+  border-spacing: 0;
   width: 100%;
-  border-radius: 32px;
+  border-radius: 12px;
+  border: 2px solid #ebcfc2;
   height: 300px;
   font-family: "Fira Sans", sans-serif;
 }
 
-#requirement-detail table,
-th,
+#requirement-detail th,
 td {
+  padding: 2%;
+  border-bottom: 1px solid #ebcfc2;
+}
+
+#requirement-detail tr:last-child td {
+  border-bottom: none;
 }
 
 #table-header {
-  background-color: #7a0e07;
+  border-radius: 12px;
   height: 50px;
-  border-radius: 16px;
   color: white;
   font-weight: 700;
   font-size: 1.25rem;
-  padding: 5px;
+}
+.table-header-label {
+  text-align: left;
+}
+.table-header-label:first-child {
+  background-color: #7a0e07;
+  border-top-left-radius: 12px;
+  width: 50%;
 }
 
+.table-header-label:last-child {
+  background-color: #7a0e07;
+  border-top-right-radius: 12px;
+}
 .table-data-row {
-  padding: 100px;
   font-weight: 400;
-  text-align: left;
   font-size: 1rem;
 }
 
 #requirement-process {
   width: 30%;
-  height: 350px;
+  height: 360px;
   background-color: white;
-  border: 3px solid #ebcfc2;
+  border: 4px solid #ebcfc2;
   border-radius: 16px;
 }
 
