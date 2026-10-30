@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  height: 10vh;
+  height: 10dvh;
   padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
   margin: 0%;
   background-color: darkred;
@@ -106,6 +106,94 @@ nav {
 }
 
 /* ------------ nav bar ends here ----------------*/
+
+/* ------------ Hero ---------------- */
+
+.hero {
+    display: flex;
+    line-height: 1.6rem;
+
+    padding: 4rem 0;
+    padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+    margin: 0%;
+
+    background-color:#b3150c;
+}
+
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 50dvw;
+}
+
+.hero-left h2 {
+    font-family: "Fira Sans", serif;
+    font-size: 20px;
+
+    color: white;
+}
+
+.hero-left h1, .hero-left span {
+    font-family: "Bagel Fat One", sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.hero-left span {
+    color: #ffc53d;
+}
+
+.hero-left h3 {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+
+}
+
+.hero-left-buttons-container {
+    display: flex;
+    gap: 5%;
+}
+
+.hero-left-button {
+    text-decoration: none;
+    padding: 1rem;
+
+    font-weight: 600;
+    font-size: 1.15rem;
+    font-family: "Fira Sans", serif;
+
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.hero-button-left {
+    color: black;
+    background-color:#ffc53d;
+    border-radius: 10px;
+}
+
+.hero-button-right {
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.hero-button-left:hover, .hero-button-right:hover {
+    color: black;
+    background-color: white;
+} /* TODO: Add animation for transformation */
+
+
+
+/* hero right is empty for now, there will be a hotpot in it */
+.hero-right {
+    width: 50dvw;
+}
+
+/* ------------ Hero Ends Here --------*/
+
 
 /* ------------ Footer ----------------*/
 .site-footer {
