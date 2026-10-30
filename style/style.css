@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Sans:wght@400;600;700&display=swap");
+@import url(typography.css);
 
 body {
   box-sizing: border-box;
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 0;
 }
 
@@ -122,16 +123,15 @@ nav {
 
     padding: 4rem 0;
     padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
-    margin: 0%;
+    margin: 0;
 
     background-color:#b3150c;
 }
 
-
 .hero-left {
     display: flex;
     flex-direction: column;
-    width: 50dvw;
+    flex: 1;
 }
 
 .hero-left h2 {
@@ -190,17 +190,106 @@ nav {
 .hero-button-left:hover, .hero-button-right:hover {
     color: black;
     background-color: white;
-} /* TODO: Add animation for transformation */
-
-
+} 
 
 /* hero right is empty for now, there will be a hotpot in it */
 .hero-right {
-    width: 50dvw;
+    flex: 1;
 }
 
 /* ------------ Hero Ends Here --------*/
 
+
+
+/* ------------- Menu ---------------- */
+.menu {
+    display: flex;
+    line-height: 1.6rem;
+
+    padding: 4rem 0;
+    padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+    margin: 0;
+
+    background-color:#f4e4e4;
+}
+/* ------------- Menu Ends Here ------ */
+
+/* ------------- Info --------------- */
+.info {
+    display: flex;
+    line-height: 1.6rem;
+
+    padding: 4rem 0;
+    padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+    margin: 0;
+}
+
+.info-left, .info-right {
+    flex: 1;
+}
+/* ------------- Info Ends here ------ */
+
+/* ------------- Form --------------- */
+.form {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6rem;
+
+    padding: 4rem 0;
+    padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+    margin: 0;
+
+    background-color:#f4e4e4;    
+}
+
+.form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-evenly;
+    gap: 1.5rem 2rem;
+
+    padding: 2.5rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+}
+
+.field label {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-weight: 600;
+}
+
+
+.field input,
+.field select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.8rem 1rem;
+
+    font-size: 1rem;
+    font-family: "Fira Sans", Arial, sans-serif;
+
+    border: 2px solid #ebcfc2;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.field input:hover,
+.field select:hover,
+.field input:focus,
+.field select:focus {
+    border-color: #b3150c;
+    background-color: #fff7f2;
+}
+
+/* ------------- Form Ends here ------ */
+/* ----------------- HOMEPAGE ENDS HERE ----------------------*/
 
 /* ------------ Footer ----------------*/
 .site-footer {
@@ -281,7 +370,7 @@ nav {
 .heading {
   background-color: #b3150c;
   width: 100%;
-  height: 25vh;
+  height: 25dvh;
   margin: 0%;
 }
 
