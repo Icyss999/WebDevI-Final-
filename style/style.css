@@ -222,11 +222,52 @@ nav {
     padding: 4rem 0;
     padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
     margin: 0;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .info {flex-direction: column;}
+}
+
+.info-left ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
 }
 
 .info-left, .info-right {
     flex: 1;
 }
+
+.info-right table {
+  border-collapse: separate;
+  border-spacing: 0;
+
+  text-align: left;
+  width: 100%;
+
+
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.info-right-table th, 
+.info-right-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px rgb(255, 226, 226) solid;
+}
+
+.info-right-table-special {
+  background-color: #fce8df;
+}
+
+.info-right-table th {
+  background-color: #7a0e07;
+  color: white;
+}
+
 /* ------------- Info Ends here ------ */
 
 /* ------------- Form --------------- */
