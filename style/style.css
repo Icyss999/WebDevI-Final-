@@ -36,6 +36,21 @@ nav {
   gap: 3em;
 }
 
+@media screen and (max-width: 870px) {
+  .nav-header {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .nav-header {
   font-family: "Bagel Fat One", sans-serif;
   font-size: 1.75rem;
@@ -128,6 +143,13 @@ nav {
     background-color:#b3150c;
 }
 
+@media screen and (max-width: 870px) {
+  .hero {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
 .hero-left {
     display: flex;
     flex-direction: column;
@@ -142,7 +164,6 @@ nav {
 }
 
 .hero-left h1, .hero-left span {
-    font-family: "Bagel Fat One", sans-serif;
     font-size: 50px;
     color: white;
 }
@@ -172,7 +193,7 @@ nav {
     font-size: 1.15rem;
     font-family: "Fira Sans", serif;
 
-    transition: background-color 0.25s ease, color 0.25s ease;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.3s ease;
 }
 
 .hero-button-left {
@@ -187,7 +208,10 @@ nav {
     border-radius: 10px;
 }
 
-.hero-button-left:hover, .hero-button-right:hover {
+.hero-left-button:hover {
+
+    transform: rotate(2.5deg);
+
     color: black;
     background-color: white;
 } 
@@ -204,14 +228,92 @@ nav {
 /* ------------- Menu ---------------- */
 .menu {
     display: flex;
+    flex-direction: column;
     line-height: 1.6rem;
 
     padding: 4rem 0;
     padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
     margin: 0;
+    gap: 1.75rem;
 
     background-color:#f4e4e4;
 }
+
+.menu-item-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.menu-item-title {
+
+  border-radius: 10px;
+  padding: 1rem;
+
+  flex: 1;
+
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 870px) {
+  .menu-item-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.menu-item-title:hover, .menu-item-list:hover {
+  transform: rotate(1.25deg);
+}
+
+.menu-item-title-left {
+  background-color: white;
+  border: 2px solid #ebcfc2;
+}
+
+.menu-item-title-right {
+  background-color: #ffc53d;
+}
+
+.menu-item-list {
+  background-color: white;
+  border: 2px solid #ebcfc2;
+  border-radius: 10px;
+  padding: 1rem;
+
+  flex: 1;
+
+  transition: transform 0.3s ease;
+}
+
+
+.menu-item-list ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  padding-left: 0;
+  margin: 0;
+
+  gap: 1rem;
+}
+
+.menu-item-list ul li {
+  border-bottom: 2px solid #fce8df;
+}
+
+.menu-item-list ul li h4 {
+  margin-top: 0px;
+  margin-bottom: 0.25rem;
+}
+
+.menu-item-list ul li p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+
+
 /* ------------- Menu Ends Here ------ */
 
 /* ------------- Info --------------- */
@@ -225,7 +327,7 @@ nav {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 870px) {
   .info {flex-direction: column;}
 }
 

@@ -1,21 +1,62 @@
+.content-top-heading, /* general menu top heading */
+.content-paragraph, /* general menu paragraph */
+.menu-paragraph,
+.menu-item-title h1 span, 
+.menu-inner-heading,
+.menu-inner-paragraph,
+.info {
+    font-family: 'Fira Sans', Arial, sans-serif;
+}
+
+.hero-left h1, 
+.hero-left span,
+.menu-top-heading,
+.content-heading,
+.menu h1 {
+    font-family: "Bagel Fat One", serif;
+}
+
+/* I'll fix this fuck ah css later. Right now it's just purely typography for index*/
+/* todo for myself: convert all font px to rem or em */
+
+.menu-item-title h1 {
+    font-size: 50px;
+}
+
+.menu-item-title h1 span {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+.menu-item-title-left h2 {
+    color: #c2261b;
+}
+
+.menu-item-title-right h1 {
+    color: black;
+}
+
+.menu-inner-heading {
+    font-size: 17.5px;
+}
+
+.menu-inner-paragraph {
+    font-weight: 400;
+    color: rgb(215, 138, 138);
+}
+
 .content-top-heading {
-    font-family: "Fira Sans", Arial, sans-serif;
     font-size: 20px;
     color: rgb(216, 113, 113);
 }
 
 .content-heading {
-    font-family: "Bagel Fat One", serif;
     font-size: 50px;
 }
 
 .content-paragraph {
-    font-family: "Fira Sans", Arial, sans-serif;
     font-size: 20px;
-}
-
-.info {
-    font-family: 'Fira Sans', Arial, sans-serif;
 }
 
 .info ol li::marker {
@@ -33,3 +74,4 @@
 .info td {
     font-size: 1.2rem;
 }
+
