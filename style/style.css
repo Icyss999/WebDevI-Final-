@@ -203,19 +203,10 @@ nav {
     justify-content: center;
     align-items: center;
 
-    animation: spin 30s linear infinite;
+
 
     flex: 1;
-}
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 .pot-rim {
   position: relative;
@@ -261,7 +252,19 @@ nav {
   border-radius: 50%;
   overflow: hidden;
 
+  animation: spin 30s linear infinite;
   background-color: black;
+}
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .soup {
@@ -274,7 +277,11 @@ nav {
 .soup-red {
   left: 0;
   background-color: #ff3838;
+}
 
+.pot-interior:has(.soup-red:hover, .curve-top:hover) :is(.soup-red, .curve-top),
+.pot-interior:has(.soup-white:hover, .curve-bottom:hover) :is(.soup-white, .curve-bottom) {
+  filter: brightness(1.25);
 }
 
 .soup-white {
@@ -530,7 +537,7 @@ nav {
     gap: 1.5rem 2rem;
 
     padding: 2.5rem;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     background-color: white;
 }
 
@@ -560,6 +567,28 @@ nav {
     background-color: #fff7f2;
 }
 
+.form-button {
+    cursor: pointer;
+    justify-self: center;
+
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffc53d;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.3s ease;
+}
+
+.form-button:active {
+  border-radius: 10px;
+  background-color: #b3150c;
+  color: white;
+  transform: scale(1.01);
+
+}
 /* ------------- Form Ends here ------ */
 /* ----------------- HOMEPAGE ENDS HERE ----------------------*/
 
