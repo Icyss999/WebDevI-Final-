@@ -1,0 +1,51 @@
+#contact-container {
+  display: flex;
+  gap: 5%;
+  padding: 4rem 5%;
+  background-color: #f4e4e4;
+}
+
+#contact-container h2 {
+  margin-top: 0;
+  font-family: "Bagel Fat One", serif;
+  font-weight: 400;
+}
+
+/* links */
+#contact-container a:link {
+  color: #b3150c;
+}
+ 
+#contact-container a:visited {
+  color: #7a0e07;
+}
+ 
+#contact-container a:hover {
+  color: #d87171;
+}
+ 
+#contact-container a:active {
+  color: black;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 2rem;
+  border: 2px solid #ebcfc2;
+  border-radius: 10px;
+  background-color: white;
+}
+ 
+dt {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+ 
+dd {
+  margin: 0;
+}
+ 
+.social-list img {
+  width: 2rem;
+  height: 2rem;
+}

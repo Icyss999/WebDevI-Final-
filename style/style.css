@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Sans:wght@400;600;700&display=swap");
-@import url(typography.css);
 
 body {
   box-sizing: border-box;
@@ -28,7 +27,7 @@ header {
   height: 10dvh;
   padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
   margin: 0%;
-  background-color: darkred;
+  background-color: #7a0e07;
 }
 
 nav {
@@ -52,14 +51,12 @@ nav {
 }
 
 .nav-header {
-  font-family: "Bagel Fat One", sans-serif;
-  font-size: 1.75rem;
   color: white;
   text-decoration: none;
 }
 
 .nav-header span {
-  color: #ffc02d;
+  color: #ffc53d;
 }
 
 .nav-item {
@@ -67,9 +64,6 @@ nav {
 
   padding: 0.9rem 1.6rem; /* change dis value to increase the background box size, I am tempted to just remove it atp.*/
 
-  font-family: "Fira Sans", sans;
-  font-size: 1.1rem;
-  font-weight: 600;
   color: white;
   text-decoration: none;
   list-style: none;
@@ -81,7 +75,7 @@ nav {
 .nav-item.active {
   background-color: #b3150c;
 
-  color: #ffc02d;
+  color: #ffc53d;
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 0.35rem;
@@ -105,7 +99,7 @@ nav {
 
   border: 1px black solid;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .dropdown:hover .dropdown-menu,
@@ -116,7 +110,6 @@ nav {
 .dropdown-item {
   padding: 0.5rem 1rem;
 
-  font-family: "Fira Sans", sans-serif;
   color: black;
   text-decoration: none;
   white-space: nowrap;
@@ -125,7 +118,7 @@ nav {
 .dropdown-item:hover {
   border-radius: 10px;
 
-  background-color: #ffc02d;
+  background-color: #ffc53d;
 }
 
 /* ------------ nav bar ends here ----------------*/
@@ -157,14 +150,10 @@ nav {
 }
 
 .hero-left h2 {
-    font-family: "Fira Sans", serif;
-    font-size: 20px;
-
     color: white;
 }
 
 .hero-left h1, .hero-left span {
-    font-size: 50px;
     color: white;
 }
 
@@ -173,11 +162,7 @@ nav {
 }
 
 .hero-left h3 {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
     color: white;
-
 }
 
 .hero-left-buttons-container {
@@ -188,10 +173,6 @@ nav {
 .hero-left-button {
     text-decoration: none;
     padding: 1rem;
-
-    font-weight: 600;
-    font-size: 1.15rem;
-    font-family: "Fira Sans", serif;
 
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.3s ease;
 }
@@ -218,7 +199,164 @@ nav {
 
 /* hero right is empty for now, there will be a hotpot in it */
 .hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: spin 30s linear infinite;
+
     flex: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pot-rim {
+  position: relative;
+  isolation: isolate; /* keeps the handles' z-index: -1 inside the pot, not behind the hero */
+
+  width: 90%;
+  max-width: 500px;
+  padding: 0.5rem;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+  background-color: #b38f4f;
+}
+
+/* handles: gold ring filled with the hero background, tucked behind the rim */
+.pot-handle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+
+  width: 3rem;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+
+  border: 0.6rem solid #b38f4f;
+  border-radius: 50%;
+  background-color: #b3150c;
+}
+
+.pot-handle-left {
+  left: -1.5rem;
+}
+
+.pot-handle-right {
+  right: -1.5rem;
+}
+
+.pot-interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background-color: black;
+}
+
+.soup {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.soup-red {
+  left: 0;
+  background-color: #ff3838;
+
+}
+
+.soup-white {
+  right: 0;
+  background-color: #fffdf0;
+
+}
+
+.curve {
+  position: absolute;
+  left: 50%;
+  width: calc(50% + 5px); /* +border so the stroke is centered on the 50% circle */
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  border: 5px solid #b38f4f;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.curve-top {
+  top: -2.5px;
+  background-color: #ff3838;
+  clip-path: inset(0 0 0 50%); /* keep right half: the S-curve */
+}
+
+.curve-bottom {
+  bottom: -2.5px;
+  background-color: #fffdf0;
+  clip-path: inset(0 50% 0 0); /* keep left half */
+}
+
+/* ingredients: positioned by inline top/left inside .pot-interior */
+.ingredient {
+  position: absolute;
+  z-index: 3; /* above .curve (z-index: 2) */
+}
+
+.ingredient-mushroom {
+  width: 1.4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #fff0c9;
+}
+
+.ingredient-tofu {
+  width: 1.3rem;
+  aspect-ratio: 1/1;
+  border-radius: 4px;
+  background-color: #fffdf0;
+  transform: rotate(20deg);
+}
+
+.ingredient-bean {
+  width: 0.8rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #6b8e23;
+}
+
+.ingredient-shrimp {
+  width: 1.8rem;
+  height: 0.8rem;
+  border-radius: 0.8rem;
+  background-color: #f4a259;
+  transform: rotate(-30deg);
+}
+
+.ingredient-chili {
+  width: 2rem;
+  height: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: #c2261b;
+  transform: rotate(35deg);
+}
+
+.ingredient-meat {
+  width: 1.6rem;
+  height: 1rem;
+  border-radius: 6px;
+  background-color: #8b5e3c;
+  transform: rotate(-15deg);
 }
 
 /* ------------ Hero Ends Here --------*/
@@ -358,7 +496,7 @@ nav {
 .info-right-table td {
   padding: 12px 16px;
   text-align: left;
-  border-bottom: 2px rgb(255, 226, 226) solid;
+  border-bottom: 2px #fce8df solid;
 }
 
 .info-right-table-special {
@@ -403,20 +541,11 @@ nav {
 
 }
 
-.field label {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-weight: 600;
-}
-
-
 .field input,
 .field select {
     box-sizing: border-box;
     width: 100%;
     padding: 0.8rem 1rem;
-
-    font-size: 1rem;
-    font-family: "Fira Sans", Arial, sans-serif;
 
     border: 2px solid #ebcfc2;
     border-radius: 10px;
@@ -438,8 +567,6 @@ nav {
 .site-footer {
   background: #7a0e07;
   color: #fff7f2;
-  font-family: "Fira Sans", Arial, sans-serif;
-  font-weight: 400;
   line-height: 1.6;
   padding: 48px 16px 32px;
 }
@@ -453,9 +580,7 @@ nav {
 }
 
 .footer-logo {
-  font-family: "Bagel Fat One", "Arial Black", sans-serif;
-  font-size: 1.8rem;
-  color: #ffffff;
+  color: white;
   margin: 0 0 8px;
 }
 
@@ -464,9 +589,6 @@ nav {
 }
 
 .site-footer h3 {
-  font-family: "Bagel Fat One", "Arial Black", sans-serif;
-  font-weight: 400;
-  font-size: 1.1rem;
   color: #ffc53d;
   margin: 0 0 12px;
 }
@@ -488,7 +610,6 @@ nav {
 .site-footer a {
   color: #fff7f2;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .site-footer a:hover {
@@ -497,7 +618,6 @@ nav {
 }
 
 .footer-small {
-  font-size: 0.85rem;
   color: #ebcfc2;
 }
 

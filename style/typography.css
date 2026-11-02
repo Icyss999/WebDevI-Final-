@@ -1,36 +1,82 @@
-.content-top-heading, /* general menu top heading */
-.content-paragraph, /* general menu paragraph */
-.menu-paragraph,
-.menu-item-title h1 span, 
-.menu-inner-heading,
-.menu-inner-paragraph,
-.info {
+body,
+input,
+select {
     font-family: 'Fira Sans', Arial, sans-serif;
 }
 
-.hero-left h1, 
-.hero-left span,
-.menu-top-heading,
-.content-heading,
+/* ---------- nav ---------- */
+
+.nav-header {
+    font-family: "Bagel Fat One", serif;
+    font-size: 1.75rem;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* ---------- hero ---------- */
+
+.hero-left h1,
+.hero-left span {
+    font-family: "Bagel Fat One", serif;
+    font-size: 3.125rem;
+}
+
+.hero-left h2 {
+    font-size: 1.25rem;
+}
+
+.hero-left h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.hero-left-button {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* ---------- shared section intro (menu, info, form) ---------- */
+
+.content-top-heading {
+    font-size: 1.25rem;
+    color: #d87171;
+}
+
+.content-heading {
+    font-family: "Bagel Fat One", serif;
+    font-size: 3.125rem;
+}
+
+.content-paragraph {
+    font-size: 1.25rem;
+}
+
+/* ---------- menu ---------- */
+
 .menu h1 {
     font-family: "Bagel Fat One", serif;
 }
 
-/* I'll fix this fuck ah css later. Right now it's just purely typography for index*/
-/* todo for myself: convert all font px to rem or em */
+.menu-top-heading {
+    font-family: "Bagel Fat One", serif;
+}
 
 .menu-item-title h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .menu-item-title h1 span {
-    font-size: 20px;
+    font-family: 'Fira Sans', Arial, sans-serif;
+    font-size: 1.25rem;
     font-weight: 300;
     color: black;
 }
 
 .menu-item-title-left h2 {
-    color: #c2261b;
+    color: #b3150c;
 }
 
 .menu-item-title-right h1 {
@@ -38,36 +84,23 @@
 }
 
 .menu-inner-heading {
-    font-size: 17.5px;
+    font-size: 1.1rem;
 }
 
 .menu-inner-paragraph {
-    font-weight: 400;
-    color: rgb(215, 138, 138);
+    color: #d87171;
 }
 
-.content-top-heading {
-    font-size: 20px;
-    color: rgb(216, 113, 113);
-}
+/* ---------- info ---------- */
 
-.content-heading {
-    font-size: 50px;
-}
-
-.content-paragraph {
-    font-size: 20px;
+.info ol li {
+    font-size: 1.2rem;
 }
 
 .info ol li::marker {
-    color: #c2261b;
-    font-weight: 600;
     font-size: 1.35rem;
-}
-
-.info ol li {
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 600;
+    color: #b3150c;
 }
 
 .info th,
@@ -75,3 +108,34 @@
     font-size: 1.2rem;
 }
 
+/* ---------- form ---------- */
+
+.field label {
+    font-weight: 600;
+}
+
+.field input,
+.field select {
+    font-size: 1rem;
+}
+
+/* ---------- footer ---------- */
+
+.footer-logo {
+    font-family: "Bagel Fat One", serif;
+    font-size: 1.8rem;
+}
+
+.site-footer h3 {
+    font-family: "Bagel Fat One", serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.site-footer a {
+    font-weight: 600;
+}
+
+.footer-small {
+    font-size: 0.85rem;
+}
