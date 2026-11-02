@@ -45,6 +45,17 @@ dd {
   margin: 0;
 }
  
+.social-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+}
+.social-list li {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
 .social-list img {
   width: 2.5rem;
   height: 2.5rem;
