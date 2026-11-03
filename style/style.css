@@ -50,6 +50,7 @@ nav {
   }
 }
 
+
 .nav-header {
   color: white;
   text-decoration: none;
@@ -80,6 +81,13 @@ nav {
   text-decoration-thickness: 4px;
   text-underline-offset: 0.35rem;
   cursor: pointer;
+}
+
+.home {
+  color: #ffc53d;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.35rem;
 }
 
 .dropdown {
