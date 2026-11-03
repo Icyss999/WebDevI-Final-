@@ -1,7 +1,25 @@
+.nav-item:hover,
+.nav-item.active {
+  background-color: #b3150c;
+
+  color: #ffc53d;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.35rem;
+  cursor: pointer;
+}
+
+.contact {
+  color: #ffc53d;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.35rem;
+}
+
 #contact-container {
   display: flex;
-  gap: 5%;
-  padding: 4rem 5%;
+  gap: 15%;
+  padding: 4rem 25%;
   background-color: #f4e4e4;
 }
 
@@ -48,12 +66,12 @@ dd {
 .social-list {
   display: flex;
   gap: 1rem;
-  justify-content: left;
+  justify-content: center;
 }
+
 .social-list li {
   display: flex;
   align-items: center;
-  justify-content: left;
 }
 
 .social-list img {
