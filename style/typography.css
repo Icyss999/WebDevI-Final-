@@ -16,6 +16,12 @@ select {
     font-weight: 600;
 }
 
+@media screen and (max-width: 412px) {
+    .nav-item {
+        font-size: 0.9rem;
+    }
+}
+
 /* ---------- hero ---------- */
 
 .hero-left h1,
@@ -138,4 +144,31 @@ select {
 
 .footer-small {
     font-size: 0.85rem;
+}
+
+@media screen and (max-width: 630px) {
+    .content-heading,
+    .hero-left h1,
+    .menu-item-title h1 
+    {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .content-heading,
+    .hero-left h1,
+    .menu-item-title h1 
+    {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content-heading,
+    .hero-left h1,
+    .menu-item-title h1 
+    {
+        font-size: 1.75rem;
+    }
 }

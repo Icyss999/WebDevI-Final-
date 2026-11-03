@@ -35,10 +35,11 @@ nav {
   gap: 3em;
 }
 
+
 @media screen and (max-width: 870px) {
   .nav-header {
     display: none;
-  }
+  } 
 
   header {
     justify-content: center;
@@ -47,8 +48,10 @@ nav {
   nav {
     width: 100%;
     justify-content: center;
+    gap: 0.5em;
   }
 }
+
 
 
 .nav-header {
