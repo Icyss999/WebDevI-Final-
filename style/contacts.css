@@ -63,6 +63,11 @@ dd {
   margin: 0;
 }
  
+
+h3 {
+  text-align: center;
+}
+
 .social-list {
   display: flex;
   gap: 1rem;
