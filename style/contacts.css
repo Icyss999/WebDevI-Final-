@@ -1,7 +1,5 @@
-.nav-item:hover,
-.nav-item.active {
+.nav-item:hover, .nav-item.active {
   background-color: #b3150c;
-
   color: #ffc53d;
   text-decoration: underline;
   text-decoration-thickness: 4px;
@@ -19,8 +17,16 @@
 #contact-container {
   display: flex;
   gap: 15%;
-  padding: 4rem 25%;
+  padding: 2rem 5%;
   background-color: #f4e4e4;
+}
+@media (min-width: 700px) {
+  #contact-container {
+    display: flex;
+    gap: 15%;
+    padding: 4rem 25%;
+    background-color: #f4e4e4;
+  }
 }
 
 #contact-container h2 {
@@ -48,10 +54,19 @@
 
 .contact-info {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid #ebcfc2;
   border-radius: 10px;
   background-color: white;
+}
+@media (min-width: 700px) {
+  .contact-info {
+    flex: 1;
+    padding: 2rem;
+    border: 2px solid #ebcfc2;
+    border-radius: 10px;
+    background-color: white;
+    }
 }
  
 dt {
@@ -61,11 +76,6 @@ dt {
  
 dd {
   margin: 0;
-}
- 
-
-h3 {
-  text-align: center;
 }
 
 .social-list {

@@ -550,12 +550,6 @@ nav {
     background-color: white;
 }
 
-@media screen and (max-width: 500px) {
-  .form form {
-    grid-template-columns: 1fr;
-  }
-}
-
 .field {
     display: flex;
     flex-direction: column;
@@ -602,6 +596,7 @@ nav {
   background-color: #b3150c;
   color: white;
   transform: scale(1.01);
+
 }
 /* ------------- Form Ends here ------ */
 /* ----------------- HOMEPAGE ENDS HERE ----------------------*/
@@ -676,7 +671,7 @@ nav {
 .heading {
   background-color: #b3150c;
   width: 100%;
-  height: 25dvh;
+  height: auto;
   margin: 0%;
 }
 
