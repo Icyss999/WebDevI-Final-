@@ -31,7 +31,7 @@
 
 .accordion[open] {
   display: block;
-  height: 160px;
+  height: auto;
   padding: 4% 0 0 2%;
 }
 
