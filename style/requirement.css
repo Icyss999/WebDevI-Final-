@@ -106,4 +106,43 @@ td {
   background-color: #7a0e07;
   cursor: pointer;
 }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  #requirement-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 1.5rem 1rem; 
+  }
+
+  #requirement-detail,
+  #requirement-process {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #requirement-detail h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  #requirement-detail table {
+    height: auto;
+  }
+
+  #requirement-detail th,
+  #requirement-detail td {
+    padding: 0.75rem;
+  }
+
+  #requirement-process {
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+
+  #route-button {
+    max-width: 90%;
+  }
+}
 /* This is the end of requirement styling */
