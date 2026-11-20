@@ -2,16 +2,16 @@
   background-color: #b3150c;
   color: #ffc53d;
   text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 0.35rem;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.1rem;
   cursor: pointer;
 }
 
 .contact {
   color: #ffc53d;
   text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 0.35rem;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.1rem;
 }
 
 #contact-container {
@@ -102,6 +102,9 @@ ion-icon {
 .social-list ion-icon {
   font-size: 2.5rem;
   color: #b3150c;
+}
+.social-list ion-icon:hover, .social-list img:hover {
+  transform: scale(1.5);
 }
 
 h4 {
