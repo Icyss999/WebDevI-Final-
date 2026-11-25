@@ -1,15 +1,6 @@
-#branches, #branch-detail {
-    padding: 4rem 0;
-}
-
 #branches {
+    padding: 4rem 0;
     background-color: #fff7f2;
-}
-
-#branch-details {
-    display: flex;
-    gap: 5%;
-    background-color: #f4e4e4;
 }
 
 .branch-grid {
@@ -49,7 +40,7 @@
     transform: scale(1.05);
 }
 
-.branch-card h2, .details-weap h2 {
+.branch-card h2, .details-wrap h2 {
     margin: 0;
     font-family: "Bagel Fat One", serif;
     font-weight: 400;
