@@ -30,11 +30,18 @@ select {
     font-size: 3.125rem;
 }
 
-.hero-left h2 {
-    font-size: 1.25rem;
+.hero-left h1 span {
+    display: block;
+    margin-top: 0.67em;
 }
 
-.hero-left h3 {
+.hero-top-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-block: 0.83em;
+}
+
+.hero-subtitle {
     font-size: 1.25rem;
     font-weight: 400;
 }
@@ -56,36 +63,44 @@ select {
     font-size: 3.125rem;
 }
 
+.info .content-heading {
+    margin-block: 0.67em;
+}
+
 .content-paragraph {
     font-size: 1.25rem;
 }
 
 /* ---------- menu ---------- */
 
-.menu h1 {
+.menu-price {
     font-family: "Bagel Fat One", serif;
+    font-weight: 700;
+    margin-block: 0.67em;
 }
 
 .menu-top-heading {
     font-family: "Bagel Fat One", serif;
+    font-size: 1.5em;
+    margin-block: 0.83em;
 }
 
-.menu-item-title h1 {
+.menu-item-title .menu-price {
     font-size: 3.125rem;
 }
 
-.menu-item-title h1 span {
+.menu-item-title .menu-price span {
     font-family: 'Fira Sans', Arial, sans-serif;
     font-size: 1.25rem;
     font-weight: 300;
     color: black;
 }
 
-.menu-item-title-left h2 {
+.menu-item-title-left .menu-top-heading {
     color: #b3150c;
 }
 
-.menu-item-title-right h1 {
+.menu-item-title-right .menu-price {
     color: black;
     font-weight: 100;
 }
@@ -150,7 +165,7 @@ select {
 @media screen and (max-width: 630px) {
     .content-heading,
     .hero-left h1,
-    .menu-item-title h1 
+    .menu-item-title .menu-price
     {
         font-size: 2.5rem;
     }
@@ -159,7 +174,7 @@ select {
 @media screen and (max-width: 510px) {
     .content-heading,
     .hero-left h1,
-    .menu-item-title h1 
+    .menu-item-title .menu-price
     {
         font-size: 2rem;
     }
@@ -168,7 +183,7 @@ select {
 @media screen and (max-width: 400px) {
     .content-heading,
     .hero-left h1,
-    .menu-item-title h1 
+    .menu-item-title .menu-price
     {
         font-size: 1.75rem;
     }

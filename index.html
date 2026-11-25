@@ -1,29 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" href="./public/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="/style/typography.css">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/typography.css">
     <title>Homepage  •  Pu Nha Hotpot 9999</title>
   </head>
   <body>
 
     <header>
-      <a href="/" class="nav-header">Pu Nha Hotpot <span>9999</span></a>
+      <a href="index.html" class="nav-header">Pu Nha Hotpot <span>9999</span></a>
 
       <nav>
-        <a href="/" class="nav-item home">Home</a>
+        <a href="index.html" class="nav-item active">Home</a>
 
         <div class="dropdown">
-          <span class="nav-item about-us">About Us</span>
+          <span class="nav-item">About Us</span>
           <div class="dropdown-menu">
             <a href="about%20us/locations.html" class="dropdown-item">Locations</a>
             <a href="about%20us/history.html" class="dropdown-item">History</a>
@@ -31,16 +25,15 @@
         </div>
 
         <div class="dropdown">
-          <span class="nav-item faqs">FAQs</span>
+          <span class="nav-item">FAQs</span>
           <div class="dropdown-menu">
-            <a href="/franchising/faqs.html" class="dropdown-item">FAQs</a>
-            <a href="/franchising/requirements.html" class="dropdown-item"
-              >Requirements</a
-            >
+            <a href="franchising/faqs.html" class="dropdown-item">FAQs</a>
+            <a href="franchising/requirements.html" class="dropdown-item"
+              >Requirements</a>
           </div>
         </div>
 
-        <a href="contacts.html" class="nav-item contact">Contact</a>
+        <a href="contacts.html" class="nav-item">Contact</a>
       </nav>
     </header>
 
@@ -49,13 +42,12 @@
       <section class="hero">
         <div class="hero-left">
           <div class="hero-left-text">
-                <h2>HOT, SPICY, DELICIOUS SINCE 2001</h2>
-                <h1>Pu Nha Hotpot</h1>
-                <h1><span>9999</span></h1>
-                <h3>
+                <p class="hero-top-heading">HOT, SPICY, DELICIOUS SINCE 2001</p>
+                <h1>Pu Nha Hotpot <span>9999</span></h1>
+                <p class="hero-subtitle">
                   Two steaming broths per pot, a buffet line full of fresh things to
                   cook, and a table full of friends with unforgottable memories
-                </h3>
+                </p>
           </div>
 
             <div class="hero-left-buttons-container">
@@ -104,14 +96,14 @@
           <div class="menu-item-container">
 
               <div class="menu-item-title menu-item-title-left">
-                <h2 class="menu-top-heading">Classic Buffet</h2>
-                <h1>$9.99 <span>per person</span></h1>
+                <h3 class="menu-top-heading">Classic Buffet</h3>
+                <p class="menu-price">$9.99 <span>per person</span></p>
                 <p class="menu-paragraph">90 minutes at your table.</p>
               </div>
 
               <div class="menu-item-title menu-item-title-right">
-                <h2 class="menu-top-heading">Pu Nha's Royalty</h2>
-                <h1>$14.99 <span>per person</span></h1>
+                <h3 class="menu-top-heading">Pu Nha's Royalty</h3>
+                <p class="menu-price">$14.99 <span>per person</span></p>
                 <p class="menu-paragraph">120 minutes with seafood and premium meats.</p>
               </div>
 
@@ -119,7 +111,7 @@
 
           <div class="menu-item-container">
             <div class="menu-item-list">
-              <h2 class="menu-top-heading">Broths</h2>
+              <h3 class="menu-top-heading">Broths</h3>
               <ul>
                 <li>
                   <h4 class="menu-inner-heading">Bone and herb</h4>
@@ -141,7 +133,7 @@
             </div>
 
             <div class="menu-item-list">
-              <h2 class="menu-top-heading">Meat and Seafood</h2>
+              <h3 class="menu-top-heading">Meat and Seafood</h3>
               <ul>
                 <li>
                   <h4 class="menu-inner-heading">Beef slices</h4>
@@ -163,7 +155,7 @@
             </div>
 
             <div class="menu-item-list">
-              <h2 class="menu-top-heading">Veggies and other</h2>
+              <h3 class="menu-top-heading">Veggies and other</h3>
               <ul>
                 <li>
                   <h4 class="menu-inner-heading">Enoki mushrooms</h4>
@@ -188,7 +180,7 @@
 
       <section class="info">
         <div class="info-left">
-          <h1 class="content-heading">House Rules</h1>
+          <h2 class="content-heading">House Rules</h2>
           <ol class="info-left-list">
             <li>Prices are per person, and that includes drinks and dessert!</li>
             <li>Everyone at a table picks the same buffet.</li>
@@ -200,7 +192,7 @@
         </div>
 
         <div class="info-right">
-          <h1  class="content-heading">When to come</h1>
+          <h2 class="content-heading">When to come</h2>
           <table class="info-right-table">
             <tr class="list-head">
               <th>Days</th>
@@ -232,6 +224,8 @@
         </div>
 
         <form action="/submit" method="post">
+          <fieldset>
+            <legend>Table reservation details</legend>
           <div class="field">
             <label for="name">Name</label>
             <input
@@ -283,12 +277,15 @@
           </div>
 
           <div class="field">
-            <label for="guests">Guests</label>
+            <label for="guests">Guests (1–15)</label>
             <input
               type="number"
               id="guests"
               name="guests"
               placeholder="5"
+              min="1"
+              max="15"
+              step="1"
               required
             />
           </div>
@@ -296,11 +293,13 @@
           <div class="field">
             <label for="branch">Branch</label>
             <select id="branch" name="branch" required>
-              <option value="chbar ampov">Chbar Ampov</option>
               <option value="russey keo">Russey Keo</option>
+              <option value="prampi makara">Prampi Makara</option>
+              <option value="chbar ampov">Chbar Ampov</option>
               <option value="ta khmao">Ta Khmao</option>
             </select>
           </div>
+          </fieldset>
 
             <input type="submit" value="Book a table" class="form-button"/>
         
@@ -333,7 +332,7 @@
 
         <div>
           <h3>Head Office</h3>
-          <p>1234 Street Name</p>
+          <p>278H Street 201R, Russei Keo, Phnom Penh, Cambodia</p>
           <p>OPEN EVERYDAYYYYYY</p>
         </div>
       </div>
