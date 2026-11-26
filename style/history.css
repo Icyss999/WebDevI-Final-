@@ -39,7 +39,7 @@ border-color: #ffc53d;
 background-color: #ffc53d;
 }
 
-.story-stat h1 {
+.story-stat .story-stat-number {
 margin: 0;
 font-family: "Bagel Fat One", serif;
 font-size: 2.5rem;
