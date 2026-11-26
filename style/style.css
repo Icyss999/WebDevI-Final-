@@ -230,12 +230,12 @@ nav {
 
 /* hero right is empty for now, there will be a hotpot in it */
 .hero-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    flex: 1;
-
+  flex: 1;
+}
 
 .pot-rim {
   position: relative;
@@ -285,7 +285,6 @@ nav {
   background-color: black;
 }
 
-}
 
 @keyframes spin {
   0% {
