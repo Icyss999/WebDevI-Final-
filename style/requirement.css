@@ -28,7 +28,7 @@
 }
 
 #requirement-detail th,
-td {
+#requirement-detail td {
   padding: 2%;
   border-bottom: 1px solid #ebcfc2;
 }
