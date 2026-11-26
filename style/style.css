@@ -709,6 +709,12 @@ nav {
 }
 /* ------------ End Footer ----------------*/
 
+/* Shared content wrapper: 1200px max content width, 1.5rem min gutter */
+.container {
+  box-sizing: border-box;
+  padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+}
+
 /* Start of the sub-heading styling */
 
 .heading {
@@ -717,7 +723,7 @@ nav {
 }
 .heading-label {
   margin: 0%;
-  padding: 2% 0 0 10%;
+  padding: 2% 0 0 0;
   font-family: "Bagel Fat One", sans-serif;
   font-size: 3rem;
   color: white;
@@ -726,7 +732,7 @@ nav {
 @media (min-width: 700px) {
   .heading-label {
     margin: 0%;
-    padding: 2% 0 0 15%;
+    padding: 2% 0 0 0;
     font-family: "Bagel Fat One", sans-serif;
     font-size: 4rem;
     color: white;
@@ -739,7 +745,7 @@ nav {
   font-weight: 700;
   font-size: 1.5rem;
   margin: 0%;
-  padding: 1% 0 0 10%;
+  padding: 1% 0 0 0;
 }
 @media (min-width: 700px) {
   .heading-content {
@@ -748,7 +754,7 @@ nav {
     font-weight: 700;
     font-size: 1.5rem;
     margin: 0%;
-    padding: 1% 0 0 15%;
+    padding: 1% 0 0 0;
   }
 }
 

@@ -1,5 +1,5 @@
 #branches {
-    padding: 4rem 0;
+    padding-block: 4rem;
     background-color: #fff7f2;
 }
 
@@ -7,14 +7,12 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 0 1rem;
 }
 @media (min-width: 700px) {
     .branch-grid { 
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         gap: 1.5rem;
-        padding: 0 2rem;
     }
 }
 

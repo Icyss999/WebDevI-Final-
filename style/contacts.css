@@ -2,14 +2,14 @@
 #contact-container {
   display: flex;
   gap: 15%;
-  padding: 2rem 5%;
+  padding-block: 2rem;
   background-color: #f4e4e4;
 }
 @media (min-width: 700px) {
   #contact-container {
     display: flex;
     gap: 15%;
-    padding: 4rem 25%;
+    padding-block: 4rem;
     background-color: #f4e4e4;
   }
 }
