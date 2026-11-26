@@ -59,6 +59,35 @@ font-size: 1.1rem;
     }
 }
 
+/* VIDEO */
+
+.video-section {
+  padding: 0 0 4rem;
+  padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
+  margin: 0;
+}
+
+.video-figure {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.video-figure video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ebcfc2;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.video-figure figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #7a0e07;
+}
+
 /* TIMELINE */
 
 .timeline {
