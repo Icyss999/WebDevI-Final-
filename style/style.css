@@ -718,43 +718,31 @@ nav {
 /* Start of the sub-heading styling */
 
 .heading {
+  margin: 0;
+  padding: 3rem 0;                                      /* equal space top and bottom */
+  padding-inline: max(1.5rem, calc(100% - 1200px) / 2); /* lines up with the logo and nav */
   background-color: #b3150c;
-  margin: 0%;
 }
+
 .heading-label {
-  margin: 0%;
-  padding: 2% 0 0 0;
+  margin: 0;
   font-family: "Bagel Fat One", sans-serif;
   font-size: 3rem;
-  color: white;
   font-weight: 100;
+  color: white;
 }
+
+.heading-content {
+  margin: 0.5rem 0 0;                                   /* small gap under the title */
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
 @media (min-width: 700px) {
   .heading-label {
-    margin: 0%;
-    padding: 2% 0 0 0;
-    font-family: "Bagel Fat One", sans-serif;
     font-size: 4rem;
-    color: white;
-    font-weight: 100;
-  }
-}
-.heading-content {
-  font-family: "Fira Sans", sans-serif;
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: 0%;
-  padding: 1% 0 0 0;
-}
-@media (min-width: 700px) {
-  .heading-content {
-    font-family: "Fira Sans", sans-serif;
-    color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin: 0%;
-    padding: 1% 0 0 0;
   }
 }
 
