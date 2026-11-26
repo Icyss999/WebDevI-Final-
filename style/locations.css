@@ -40,7 +40,7 @@
     transform: scale(1.05);
 }
 
-.branch-card h2, .details-wrap h2 {
+.branch-card h2 {
     margin: 0;
     font-family: "Bagel Fat One", serif;
     font-weight: 400;
