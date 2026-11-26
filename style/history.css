@@ -62,9 +62,10 @@ font-size: 1.1rem;
 /* VIDEO */
 
 .video-section {
-  padding: 0 0 4rem;
+  padding: 4rem 0;
   padding-inline: max(1.5rem, calc(100% - 1200px) / 2);
   margin: 0;
+  background-color: #ebcfc2;
 }
 
 .video-figure {
